@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+.flex {
+  flex-grow: 1;
+}
+.main {
+  margin-top: 25%;
+  text-align: center;
+}
+.container-logo {
+  margin-top: 15px;
+  display: flex;
+  align-content: center;
+  position: relative;
+}
+.flex-logo {
+  flex-grow: 0.1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
