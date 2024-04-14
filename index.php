@@ -27,7 +27,7 @@
             <div class="chronoContent" id="단비_생일"></div>
         </div>
         <div class="poem-link">
-            <a href="./poem.html">시</a>
+            <a href="./poem.php">시</a>
         </div>
     </div>
 </body>
