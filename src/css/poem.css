@@ -1,3 +1,4 @@
+/* Styles de base */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,8 +7,10 @@ body {
     background-color: #FFE5E5;
 }
 .poems-container {
-    width: 30%;
+    max-width: 600px; /* Limiter la largeur maximale */
+    width: 100%; /* Réglage de la largeur à 100% pour les appareils mobiles */
     margin: 0 auto;
+    text-align: left;
 }
 .poem {
     margin-bottom: 30px;
@@ -20,8 +23,17 @@ body {
 }
 h1{
     text-align: center;
-    font-size: 36px; 
+    font-size: 24px; /* Réduire la taille de la police pour les appareils mobiles */
     font-weight: bold;
     margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+}
 
+/* Media query pour les appareils de taille moyenne */
+@media (max-width: 800px) {
+    .poems-container {
+        padding: 10px; /* Réduire le rembourrage pour un meilleur ajustement sur les appareils de taille moyenne */
+    }
 }

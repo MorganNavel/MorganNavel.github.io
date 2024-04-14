@@ -86,3 +86,24 @@ body {
 .poem-link a:hover {
     color: #f74141;
 }
+@media (max-width: 576px) {
+    .horloge {
+        font-size: 20px; /* Réduire la taille de la police pour les appareils plus petits */
+    }
+
+    .container div {
+        height: auto; /* Redéfinir la hauteur automatique pour s'adapter au contenu */
+        width: auto;
+        margin: 10px 10px; /* Centrer les éléments horizontalement */
+    }
+
+    .toggleButton {
+        font-size: 12px; /* Réduire la taille de la police pour les appareils plus petits */
+        padding: 8px 16px; /* Réduire le rembourrage des boutons */
+        width: 150px; /* Réduire la largeur des boutons */
+    }
+
+    .chronoContent {
+        padding: 8px; /* Réduire le rembourrage du contenu */
+    }
+}
