@@ -5,6 +5,7 @@ body {
     padding: 20px;
     display: flex;
     background-color: #FFE5E5;
+    justify-content: center; /* Centrer le contenu horizontalement */
 }
 .poems-container {
     max-width: 600px; /* Limiter la largeur maximale */
@@ -32,8 +33,25 @@ h2{
 }
 
 /* Media query pour les appareils de taille moyenne */
-@media (max-width: 800px) {
+@media (max-width: 550px) {
     .poems-container {
         padding: 10px; /* Réduire le rembourrage pour un meilleur ajustement sur les appareils de taille moyenne */
+    }
+}
+
+/* Media query pour les appareils de petite taille */
+@media (max-width: 400px) {
+    .poems-container {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .poem {
+        font-size: 14px;
+        padding: 10px;
     }
 }
