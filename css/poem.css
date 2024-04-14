@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    background-color: #FFE5E5;
+}
+.poems-container {
+    width: 30%;
+    margin: 0 auto;
+}
+.poem {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
+}
+h1{
+    text-align: center;
+    font-size: 36px; 
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}

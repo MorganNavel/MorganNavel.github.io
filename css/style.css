@@ -1,0 +1,88 @@
+body {
+    background-color: #FFE5E5; /* Une teinte de rose doux */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc légèrement transparent */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.horloge {
+    color: #FF0000; /* Rouge vif pour le texte */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container div {
+    height: 50px;
+    width: 300px;
+}
+
+.chrono {
+    position: relative;
+}
+
+.toggleButton {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    width: 200px;
+    pointer-events: auto;
+}
+
+.toggleButton:hover {
+    background-color: #f74141;
+}
+
+.chronoContent {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.chrono.active .chronoContent {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.poem-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.poem-link a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.poem-link a:hover {
+    color: #f74141;
+}
